@@ -35,7 +35,6 @@ module XCCache
           # Workaround for swiftinterface emission
           # https://github.com/swiftlang/swift/issues/64669#issuecomment-1535335601
           cmd << "-Xswiftc" << "-enable-library-evolution"
-          cmd << "-Xswiftc" << "-alias-module-names-in-module-interface"
           cmd << "-Xswiftc" << "-emit-module-interface"
           cmd << "-Xswiftc" << "-no-verify-emitted-module-interface"
         end
